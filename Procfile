@@ -1,0 +1,1 @@
+web gunicorn newsBase.wsgi:application --log-file -
