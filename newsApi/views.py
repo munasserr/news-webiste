@@ -4,7 +4,7 @@ import requests , random
 API_KEY = "a3343bd6c2834603a012551717f67c2b"
 
 def home(request):
-    url = f'https://newsapi.org/v2/top-headlines&apiKey={API_KEY}'
+    url = f'https://newsapi.org/v2/top-headlines?country=us&apiKey={API_KEY}'
     country = request.GET.get('country')
     category = request.GET.get('category')
     if country :
